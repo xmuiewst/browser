@@ -54,7 +54,6 @@ COPY main.py .
 COPY nginx.conf /etc/nginx/sites-enabled/default
 COPY start.sh .
 RUN chmod +x start.sh
- 
-VOLUME ["/data"]
+
 EXPOSE 8080
 CMD ["./start.sh"]
